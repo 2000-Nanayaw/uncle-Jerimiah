@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>react</title>
+</head>
+<body>
+<script>
+	// console.log("first");
+	// setTimeout(()=>{console.log("sencond")},2000);
+	// setTimeout(()=>{console.log("third")},3000);
+
+	// let eusbett = new Promise((response, reject)=>{
+	// 	let coffee = false;
+	// 	if(coffee){
+	// 		response("pls wait for 10mins")
+	// 	}else{
+	// 		reject("other for different item")
+	// 	}
+	// })
+
+	// eusbett.then((response)=>{
+	// 	console.log(`you are true with your request ${response}`)}).catch((err)=>{
+	// 		console.log(err)
+	// 	})
+
+let examples = new Promise((response, reject)=>{
+	let todayIsChurch = true;
+	if(todayIsChurch){
+		response("yh today is sunday come to church")
+	}else{
+		reject("dont come today, next week will do")
+	}
+});
+
+examples.then((response)=>{console.log(response)}).catch((err)=>{
+	console.log(err)
+})
+
+// componentDidMount(){
+// 	fetch("www.jsar.com").then((data)=>{data.
+// json().then(()=>{console.log(data)})
+// })
+// }
+
+</script>
+</body>
+</html>
